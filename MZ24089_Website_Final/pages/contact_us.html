@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | FruitNest</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <!--<script defer src="../js/script.js"></script>-->
+  <!--<script defer src="../js/products.js"></script>-->
+
+</head>
+<body>
+  <!-- Include Navbar -->
+  <header>
+<div class="navbar">
+            <div class="logo">
+                <img src="../images/Logo1.png" alt="FruitNest Logo" />
+            </div>
+            <nav class="main-nav" id="navMenu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/shop_now.html">Shop Now</a></li>
+                    <li><a href="../pages/our_story.html">Our Story</a></li>
+                    <li><a href="../pages/contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-icons">
+                <a href="#"><img src="https://img.icons8.com/ios/24/search--v1.png" alt="Search Icon"/></a>
+                <a href="#"><img src="https://img.icons8.com/ios/24/user--v1.png" alt="User Icon"/></a>
+                <a href="pages/cart.html" class="cart-icon">
+                    <img src="https://img.icons8.com/ios/24/shopping-cart--v1.png" alt="Cart Icon"/>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            
+            <!-- Hamburger -->
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1 class="section-title">Contact Us</h1>
+    <p class="section-description">We love to hear from you. Your comments and suggestions will be appreciated.</p>
+
+    <div class="contact-container">
+      <!-- Left Form Section -->
+      <form id="contactForm" class="contact-form" novalidate>
+  <h2>Send us an email</h2>
+  <p>Ask us anything! We're here to help.</p>
+
+  <label for="name">Name *</label>
+  <input type="text" id="name" required />
+  <small class="error" id="nameError"></small>
+
+  <label for="phone">Phone Number *</label>
+  <input type="tel" id="phone" required />
+  <small class="error" id="phoneError"></small>
+
+  <label for="email">Email *</label>
+  <input type="email" id="email" required />
+  <small class="error" id="emailError"></small>
+
+  <label for="comment">Comment *</label>
+  <textarea id="comment" required></textarea>
+  <small class="error" id="commentError"></small>
+
+  <button type="submit" class="btn-primary">Submit Contact</button>
+</form>
+
+
+      <!-- Right Info Section -->
+      <div class="contact-info">
+        <h2>Live Help</h2>
+        <p>If you have an issue or question that requires immediate assistance, click the button below to chat via WhatsApp.</p>
+
+        <button class="btn-outline">WhatsApp Us</button>
+
+        <ul>
+          <li><strong>WhatsApp:</strong> +44 121 123 4567</li>
+          <li><strong>Phone:</strong> +44 121 123 4567</li>
+          <li><strong>Office:</strong> 
+            123, Market Street, Birmingham, UK
+        </li>
+          <li><strong>Opening Hours:</strong> MON to SAT: 9:00AM – 6:00PM</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer  class="site-footer">
+    <!-- Same footer -->
+     <div class="footer-container">
+    
+    <!-- Column 1: Logo & Social -->
+    <div class="footer-brand">
+      <img src="../images/Logo1.png" alt="FruitNest Logo" class="footer-logo" />
+      <p>FruitNest delivers fresh, natural and organic fruits right to your doorstep.</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/20/facebook-new.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/20/twitter.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/20/instagram-new.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/20/youtube-play.png"/></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Navigation Links -->
+    <div class="footer-links">
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Seasonal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Category</h4>
+        <ul>
+          <li><a href="#">Organic</a></li>
+          <li><a href="#">Fresh Cuts</a></li>
+          <li><a href="#">Tropical</a></li>
+          <li><a href="#">Berries</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>My Account</h4>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><img src="https://img.icons8.com/ios-filled/20/marker.png"/> Market Street, Birmingham, UK</li>
+        <li><img src="https://img.icons8.com/ios-filled/20/new-post.png"/> info@fruitnest.co.uk</li>
+        <li><img src="https://img.icons8.com/ios-filled/20/phone.png"/> +44 121 123 4567</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 FruitNest. All rights reserved.</p>
+  </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+  <script>
+    //Form Validation
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const comment = document.getElementById("comment").value.trim();
+
+  let isValid = true;
+
+  // Clear all previous errors
+  document.querySelectorAll(".error").forEach(el => el.textContent = "");
+
+  // Name validation
+  if (!name) {
+    document.getElementById("nameError").textContent = "Name is required.";
+    isValid = false;
+  } else if (name.length < 4) {
+    document.getElementById("nameError").textContent = "Name must be at least 4 characters.";
+    isValid = false;
+  } else if (/[\d!@#\$%\^\&*\)\(+=._-]/.test(name)) {
+    document.getElementById("nameError").textContent = "Name should not contain numbers or special characters.";
+    isValid = false;
+  }
+
+  // Phone validation
+  if (!phone) {
+    document.getElementById("phoneError").textContent = "Phone number is required.";
+    isValid = false;
+  } else if (!/^\d{11}$/.test(phone)) {
+    document.getElementById("phoneError").textContent = "Phone number must be exactly 11 digits (no letters or symbols).";
+    isValid = false;
+  }
+
+  // Email validation
+  if (!email) {
+    document.getElementById("emailError").textContent = "Email is required.";
+    isValid = false;
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    document.getElementById("emailError").textContent = "Please enter a valid email address (must include @ and .)";
+    isValid = false;
+  }
+
+  // Comment validation
+  if (!comment) {
+    document.getElementById("commentError").textContent = "Comment is required.";
+    isValid = false;
+  } else if (comment.length < 4) {
+    document.getElementById("commentError").textContent = "Comment must be at least 4 characters long.";
+    isValid = false;
+  }
+
+  if (isValid) {
+    alert("Message submitted successfully!");
+    this.reset();
+  }
+});
+
+  </script>
+</body>
+</html>
+
